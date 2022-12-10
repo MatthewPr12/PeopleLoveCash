@@ -1,4 +1,4 @@
-package org.example;
+package org.example.decorator;
 
 import com.google.cloud.vision.v1.AnnotateImageRequest;
 import com.google.cloud.vision.v1.AnnotateImageResponse;
