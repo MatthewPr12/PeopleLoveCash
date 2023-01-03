@@ -21,6 +21,7 @@ public class CachedDocument implements Document{
             SmartDocument smartDocument = new SmartDocument(gcsPath);
             String text = smartDocument.parse();
             String sql = "INSERT INTO cachedDoc values ('" + gcsPath + "', '" + text + "')";
+            connection.executeQuery(sql);
 //            System.out.println(text);
             return text;
         }
